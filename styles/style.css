@@ -127,6 +127,11 @@ body{
 
 .skills h2{
   font-family: quicksand;
+  color:#455A64;
+}
+
+.skills p{
+  font-size: medium;
 }
 
 .skills .about{
