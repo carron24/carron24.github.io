@@ -26,5 +26,6 @@ $(document).ready(function() {
     $(message).insertBefore($this.find('.btn'));
   });
 
+  $(function() { $('body').hide().show(); });
 
 });
