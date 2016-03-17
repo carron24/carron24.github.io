@@ -1,15 +1,18 @@
 body{
 
 }
-* {
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
 
 @font-face {
     font-family: 'cylburn';
     src: url('../font/Cylburn.otf');
+    font-style: normal;
+
+    font-family: 'simplifica';
+    src: url('../font/Simplifica.ttf');
+    font-style: normal;
+
+    font-family: 'anders';
+    src: url('../font/Anders.ttf');
     font-style: normal;
 }
 
@@ -19,13 +22,15 @@ body{
 	filter: none !important;
 	color:#fff;
 	 display: inline-block;
+	   -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
 }
 
 .navbar-default .navbar-brand{
-	font-family:cylburn;
+	font-family:anders;
 	color: #fff;
 	font-size: 250%;	
-	padding-top: 32.5%;
 	
 }
 
@@ -38,10 +43,14 @@ body{
     background:#607D8B;	
 }
 
+.navbar-default .nav li:hover a {
+	color:#B6B6B6;	
+}
+
 @media (max-width: 767px) {
     body > .container { overflow: hidden; } /* fix */
-    body > .container > * { overflow: visible; } /* reset back to normal */
 }
+
 
 .head{
 	padding:0px;
@@ -56,8 +65,23 @@ body{
 	color: #FFFFFF;
 }
 
+.jumbotron{
+	-webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
 .jumbotron p{
 	color: #B4C0C6;
+}
+
+.jumbotron img{ 
+   border:10px solid #455A64;
+   height:140px;
+   width:140px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
 }
 
 /*.nav{
