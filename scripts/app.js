@@ -26,6 +26,13 @@ $(document).ready(function() {
     $(message).insertBefore($this.find('.btn'));
   });
 
+  $('.skills').on('click', function(event){
+    event.stopPropagation(); //stops event from traversing up the DOM
+    event.preventDefault(); //stops event from jumping page to top
+    $(this).find('.about').slideToggle();
+
+  });
+
   $(function() { $('body').hide().show(); });
 
 });

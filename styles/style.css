@@ -86,28 +86,51 @@ body{
 }
 
 .jumbotron{
-	-webkit-border-radius: 0 !important;
+	  -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
 
-.jumbotron h1{
+.mission{
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.mission h1{
 	color: #FFFFFF;
 	font-family:quicksand;
 }
 
-.jumbotron p{
+.mission p{
 	color: #fff;
 	font-family:quicksand-light;
 }
 
-.jumbotron img{ 
+.mission img{ 
    border:10px solid #455A64;
    height:140px;
    width:140px;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    border-radius: 50%;
+}
+
+.skills{
+  margin-top: -150px;
+  margin-right: 30px;
+  margin-left:30px;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 75px;
+  height:100%;
+}
+
+.skills h2{
+  font-family: quicksand;
+}
+
+.skills .about{
+  display: none;
 }
 
 /*.nav{
