@@ -1,10 +1,20 @@
 body{
 
 }
+
+@font-face {
+    font-family: 'cylburn';
+    src: url('../font/Cylburn.otf');
+    font-style: normal;
+}
+
 .navbar-brand{
 	position:absolute;
 	float:none;
 	width:30%;
+	font-family:cylburn;
+	font-size: 250%;
+	padding-top: 1.8%;
 }
 .head{
 	padding:0px;
