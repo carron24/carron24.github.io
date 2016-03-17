@@ -5,6 +5,11 @@ body{
 @font-face {
 
     font-family: 'quicksand';
+    src: url('../font/quicksand 2/Quicksand-Regular.otf');
+    font-style: normal;
+}
+@font-face{
+	font-family: 'quicksand-light';
     src: url('../font/quicksand 2/Quicksand-Light.otf');
     font-style: normal;
 }
@@ -84,7 +89,7 @@ body{
 
 .jumbotron p{
 	color: #fff;
-	font-family:quicksand;
+	font-family:quicksand-light;
 }
 
 .jumbotron img{ 
