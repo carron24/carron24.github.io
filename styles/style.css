@@ -147,6 +147,18 @@ a.anchor {
   display: none;
 }
 
+.experience{
+  background: none;
+}
+.experience p{
+  font-size: medium;
+}
+.experience h2{
+  font-family: quicksand;
+  color:#455A64;
+  text-align: center;
+}
+
 .technologies{
   margin-top: 40px;
   padding-right: 15%;
@@ -155,12 +167,14 @@ a.anchor {
 }
 
 .technologies p{
+  font-size: medium;
 }
 
-.experience{
-  background: none;
+.technologies h2{
+  font-family: quicksand;
+  color:#455A64;
+  text-align: center;
 }
-
 
 /*.nav{
 	width:25%;
