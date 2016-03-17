@@ -1,6 +1,11 @@
 body{
 
 }
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
 
 @font-face {
     font-family: 'cylburn';
@@ -8,27 +13,56 @@ body{
     font-style: normal;
 }
 
-.navbar-brand{
-	position:absolute;
-	float:none;
-	width:25%;
-	font-family:cylburn;
-	font-size: 250%;
-	padding-top: 1.8%;
+
+.navbar-default {
+	background: #455A64;
+	filter: none !important;
+	color:#fff;
+	 display: inline-block;
 }
+
+.navbar-default .navbar-brand{
+	font-family:cylburn;
+	color: #fff;
+	font-size: 250%;	
+	padding-top: 32.5%;
+	
+}
+
+.navbar-default .nav li a{
+	color:#fff;
+}
+
+.navbar-default .nav li.active a {
+	color:#fff;
+    background:#607D8B;	
+}
+
+@media (max-width: 767px) {
+    body > .container { overflow: hidden; } /* fix */
+    body > .container > * { overflow: visible; } /* reset back to normal */
+}
+
 .head{
 	padding:0px;
 }
 
 
 .bg {
-  background:transparent;
-  background:url("../images/pink.jpeg");
+  background:#607D8B;
 }
 
-.nav{
-	width:25%;
+.page-header{
+	color: #FFFFFF;
 }
+
+.jumbotron p{
+	color: #B4C0C6;
+}
+
+/*.nav{
+	width:25%;
+}*/
 .footer {
   position:absolute;
   left:0%;
