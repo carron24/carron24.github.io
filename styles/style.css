@@ -3,14 +3,22 @@ body{
 }
 
 @font-face {
+
+    font-family: 'quicksand';
+    src: url('../font/quicksand 2/Quicksand-Light.otf');
+    font-style: normal;
+}
+@font-face{
     font-family: 'cylburn';
     src: url('../font/Cylburn.otf');
     font-style: normal;
-
+}
+@font-face{
     font-family: 'simplifica';
     src: url('../font/Simplifica.ttf');
     font-style: normal;
-
+}
+@font-face{
     font-family: 'anders';
     src: url('../font/Anders.ttf');
     font-style: normal;
@@ -43,9 +51,11 @@ body{
     background:#607D8B;	
 }
 
-.navbar-default .nav li:hover a {
-	color:#B6B6B6;	
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #607D8B;
+    color:#fff;
 }
+
 
 @media (max-width: 767px) {
     body > .container { overflow: hidden; } /* fix */
@@ -61,18 +71,20 @@ body{
   background:#607D8B;
 }
 
-.page-header{
-	color: #FFFFFF;
-}
-
 .jumbotron{
 	-webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
 }
 
+.jumbotron h1{
+	color: #FFFFFF;
+	font-family:quicksand;
+}
+
 .jumbotron p{
-	color: #B4C0C6;
+	color: #fff;
+	font-family:quicksand;
 }
 
 .jumbotron img{ 
