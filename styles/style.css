@@ -38,6 +38,12 @@ body{
     font-style: normal;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -125px;
+    visibility: hidden;
+}
 
 .navbar-default {
 	background: #455A64;
@@ -56,13 +62,16 @@ body{
 	
 }
 
+.navbar-default .navbar-brand:hover{
+  color:#000;
+}
 .navbar-default .nav li a{
 	color:#fff;
 }
 
 .navbar-default .nav li.active a {
-	color:#fff;
-    background:#607D8B;	
+	  color:#fff;
+    background:#455A64;	
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -115,7 +124,7 @@ body{
    border-radius: 50%;
 }
 
-.skills{
+.about{
   margin-top: -150px;
   margin-right: 5%;
   margin-left:5%;
@@ -125,18 +134,33 @@ body{
   height:100%;
 }
 
-.skills h2{
+.about h2{
   font-family: quicksand;
   color:#455A64;
 }
 
-.skills p{
+.about p{
   font-size: medium;
 }
 
-.skills .about{
+.about .aboutme{
   display: none;
 }
+
+.technologies{
+  margin-top: 40px;
+  padding-right: 15%;
+  padding-left:825px;
+  height:100%;
+}
+
+.technologies p{
+}
+
+.experience{
+  background: none;
+}
+
 
 /*.nav{
 	width:25%;

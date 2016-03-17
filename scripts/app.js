@@ -26,13 +26,24 @@ $(document).ready(function() {
     $(message).insertBefore($this.find('.btn'));
   });
 
-  $('.skills').on('click', function(event){
+  $('.about').on('click', function(event){
     event.stopPropagation(); //stops event from traversing up the DOM
     event.preventDefault(); //stops event from jumping page to top
-    $(this).find('.about').slideToggle();
+    $(this).find('.aboutme').slideToggle();
 
   });
 
-  $(function() { $('body').hide().show(); });
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+    return false;
+});
+
+
+
+
+
+$(function() { $('body').hide().show(); });
 
 });
