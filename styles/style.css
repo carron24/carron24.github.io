@@ -250,6 +250,7 @@ a.anchor {
 .contact .btn{
   padding-left: 2%;
   padding-right:2%;
+  width: 160px;
 }
 
 .contact .btn:hover{
