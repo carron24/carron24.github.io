@@ -99,6 +99,7 @@ a.anchor {
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
     margin:0;
+    padding: 100px 0px 100px 0px;
 }
 
 .mission{
@@ -126,12 +127,12 @@ a.anchor {
 }
 
 .about{
-  margin-top: -115px;
+  margin-top: -175px;
   margin-right: 5%;
   margin-left:5%;
   border-style: solid;
   border-width: 2px;
-  padding-top: 75px;
+  padding-top: 55px;
   height:100%;
 }
 
@@ -202,9 +203,8 @@ a.anchor {
 
 
 .contact{
-  padding-right: 100px;
-  padding-left: 100px;
   background-color: #607D8B;
+  padding:10px 100px 60px 100px;
 }
 
 .contact h2{
