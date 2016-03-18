@@ -149,21 +149,32 @@ a.anchor {
 }
 
 .experience{
-  background-color: #fff;
+  background-color: #455A64;
 }
 .experience p{
   font-size: medium;
+  color:#fff;
 }
 .experience h2{
+  font-family: quicksand;
+  color:#fff;
+  text-align: center;
+}
+
+.skills{
+  background-color: #fff;
+}
+.skills p{
+  font-size: medium;
+}
+.skills h2{
   font-family: quicksand;
   color:#455A64;
   text-align: center;
 }
 
 .technologies{
-  padding-right: 15%;
-  padding-left:825px;
-  height:100%;
+  background-color: #fff; 
 }
 
 .technologies p{
@@ -176,14 +187,29 @@ a.anchor {
   text-align: center;
 }
 
+.projects{ 
+}
+
+.projects p{
+  font-size: medium;
+}
+
+.projects h2{
+  font-family: quicksand;
+  color:#455A64;
+  text-align: center;
+}
+
+
 .contact{
   padding-right: 100px;
   padding-left: 100px;
+  background-color: #607D8B;
 }
 
 .contact h2{
   font-family: quicksand;
-  color:#455A64;
+  color:#fff;
   text-align: center;
 }
 
