@@ -252,6 +252,16 @@ a.anchor {
   color:#aaa;
 }
 
+.contact .phone{
+  display: none;
+  color:#fff;
+}
+
+.contact .email{
+  display: none;
+  color:#fff;
+}
+
 
 .footer {
   position:absolute;
