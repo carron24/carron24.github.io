@@ -2,12 +2,12 @@
 
 $(document).ready(function() {
 
-  $('.about').on('click', function(event){
+  /*$('.about').on('click', function(event){
     event.stopPropagation(); //stops event from traversing up the DOM
     event.preventDefault(); //stops event from jumping page to top
     $(this).find('.aboutme').slideToggle();
 
-  });
+  });*/
 
   $('.btn').on('click', function(){
     var $this = $(this);
@@ -27,6 +27,21 @@ $('nav a').click(function(){
     }, 500);
     return false;
 });
+
+  
+  $('.about').on('click', function() {
+    $.ajax('aboutme.html', {
+      success: function(response) {
+        response.stopPropagation(); //stops event from traversing up the DOM
+        response.preventDefault(); //stops event from jumping page to top
+        $('.aboutme').html(response).slideToggle();
+      },
+      error: function() {
+        $('.aboutme').html('<li>There was a problem fetching the latest aboutme Please try again.</li>');
+      },
+      timeout: 3000
+    });
+  });
 
 
 $("#myCarousel").carousel();
