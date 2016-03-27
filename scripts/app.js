@@ -32,7 +32,7 @@ $('nav a').click(function(){
   $('.about').on('click', function() {
     $.ajax('aboutme.html', {
       success: function(response) {
-        $('.about').find('.aboutme').html(response).slideDown();
+        $('.about').find('.aboutme').html(response).slideToggle();
       }
     });
   });
