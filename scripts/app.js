@@ -1,13 +1,38 @@
 'use strict';
 
+function About(el){
+  var about = this;
+  this.el = el;
+
+  this.toggleAbout = function(){
+    $.ajax('aboutme.html',{
+      context: about,
+      success: function(response){
+        this.el.find('.aboutme').html(response).slideToggle();
+      }
+      error: function() {
+        this.el.find('.aboutme').html('<p>There was an error processing your request</p>').slideToggle();
+      }
+      timeout: 3000,
+      beforeSend: function(){
+        this.el.addClass('loading');
+      }
+      complete: function(){
+        this.el.removeClass('loading');
+      }
+    });
+
+
+  }
+
+  this.el.on('click', this.toggleAbout);
+}
+
 $(document).ready(function() {
 
-  /*$('.about').on('click', function(event){
-    event.stopPropagation(); //stops event from traversing up the DOM
-    event.preventDefault(); //stops event from jumping page to top
-    $(this).find('.aboutme').slideToggle();
+  
+  var aboutFill = new About('.about');
 
-  });*/
 
   $('.btn').on('click', function(){
     var $this = $(this);
@@ -27,15 +52,6 @@ $('nav a').click(function(){
     }, 500);
     return false;
 });
-
-  
-  $('.about').on('click', function() {
-    $.ajax('aboutme.html', {
-      success: function(response) {
-        $('.about').find('.aboutme').html(response).slideToggle();
-      }
-    });
-  });
 
 
 $("#myCarousel").carousel();
