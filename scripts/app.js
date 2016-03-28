@@ -11,7 +11,7 @@ function About(el){
         this.el.find('.aboutme').html(response).slideToggle();
       }
       error: function() {
-        this.el.find('.aboutme').html('<p>There was an error processing your request</p>').slideToggle();
+        this.el.find('.aboutme').html('<p>There was an error processing your request</p>');
       }
       timeout: 3000,
       beforeSend: function(){
