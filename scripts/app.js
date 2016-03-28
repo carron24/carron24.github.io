@@ -9,14 +9,14 @@ function About(el){
       context: about,
       success: function(response){
         this.el.find('.aboutme').html(response).slideToggle();
-      }
+      },
       error: function() {
         this.el.find('.aboutme').html('<p>There was an error processing your request</p>');
-      }
+      },
       timeout: 3000,
       beforeSend: function(){
         this.el.addClass('loading');
-      }
+      },
       complete: function(){
         this.el.removeClass('loading');
       }
