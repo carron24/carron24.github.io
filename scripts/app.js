@@ -51,6 +51,13 @@ $('nav a').click(function(){
     return false;
 });
 
+$('.logo').on('mouseenter', function() {
+  $(this).find('p').slideDown();
+});
+
+$('.logo').on('mouseleave', function() {
+  $(this).find('p').slideUp();
+});
 
 $("#myCarousel").carousel();
 

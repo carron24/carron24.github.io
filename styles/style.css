@@ -180,16 +180,30 @@ a.anchor {
   background-color: #fff; 
 }
 
-.technologies p{
-  font-size: medium;
-}
-
 .technologies h2{
   font-family: quicksand;
   color:#455A64;
   text-align: center;
 }
 
+.technologies .logo{
+  position: relative;
+}
+.technologies .logo img{
+   margin: 40px 0px 5px 0px;
+   width:128px;
+}
+
+.technologies p{
+  font-family: quicksand;
+  font-size: medium;
+  color:#455A64;
+  display: none;
+  width: 100px;
+  left:39.5%;
+  margin-bottom: 50px;
+  position:absolute;
+}
 .projects{ 
 }
 
@@ -231,6 +245,7 @@ a.anchor {
   left: 0;
   min-width: 100%;
   min-height: 500px !important;
+  max-height: 500px !important;
   height: 100%;
 }
 
