@@ -21,9 +21,7 @@ function About(el){
         this.el.removeClass('loading');
       }
     });
-
-
-  }
+  };
 
   this.el.on('click', this.toggleAbout);
 }
