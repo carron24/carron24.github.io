@@ -29,7 +29,7 @@ function About(el){
 $(document).ready(function() {
 
   
-  var aboutFill = new About('.about');
+  var aboutToggle = new About($('.about'));
 
 
   $('.btn').on('click', function(){
